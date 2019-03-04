@@ -3,10 +3,22 @@
 
 #include "pch.h"
 #include <iostream>
+#include "..\NumericsLibrary\NumericalIntegration.h"
+#include "..\PricingLibrary\NumericalIntegration.h"
+#include <string>
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+    std::cout << "Hello World!\n";
+	int x = 23;
+	NumericalIntegration NumInt(1000, -1.0, 3.0);
+	//double result = NumericalIntegration::f1(2.0);
+	auto result = NumInt(payoff);
+	std::cout << "Result of Integration: " << result << "\n";
+	std::cout << static_cast<char>(x) << "\n";
+	std::cout << std::to_string(x) << std::endl;
+
+	auto ch = std::to_string(x);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

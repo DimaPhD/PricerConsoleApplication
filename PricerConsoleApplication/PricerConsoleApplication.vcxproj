@@ -162,6 +162,11 @@
     </ClCompile>
     <ClCompile Include="PricerConsoleApplication.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NumericsLibrary\NumericsLibrary.vcxproj">
+      <Project>{7b9e08e3-c393-4b07-8a88-97657c1d8f64}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
